@@ -52,13 +52,14 @@
         </nav>
 
         <div class="container form-padding">
-            <form action="employee_add.php" method="POST">
+            <form action="employee_add.php" method="post">
                 <div class="form-group">
-                    <label for="employee-id">Employee ID</label>
+                    <label for="employee_id">Employee ID</label>
                     <input
                         type="text"
                         class="form-control"
-                        id="employee-id"
+                        id="employee_id"
+                        name="employee_id"
                         aria-describedby="emp-id-help"
                         placeholder="Enter Employee ID"
                     />
@@ -67,20 +68,22 @@
                     >
                 </div>
                 <div class="form-group">
-                    <label for="fist-name">First Name</label>
+                    <label for="first_name">First Name</label>
                     <input
                         type="text"
+                        name="first_name"
                         class="form-control"
-                        id="first-name"
+                        id="first_name"
                         placeholder="Enter First Name"
                     />
                 </div>
                 <div class="form-group">
-                    <label for="last-name">Last Name</label>
+                    <label for="last_name">Last Name</label>
                     <input
                         type="text"
                         class="form-control"
-                        id="last-name"
+                        id="last_name"
+                        name="last_name"
                         placeholder="Enter Last Name"
                     />
                 </div>
@@ -90,10 +93,11 @@
                         type="text"
                         class="form-control"
                         id="address"
+                        name="address"
                         placeholder="Enter Address"
                     />
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Add</button>
             </form>
         </div>
 
